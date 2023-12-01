@@ -16,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void download(View v){
-    Log.i("test","probando click" );
+    ImageDowloader descarga = new ImageDowloader();
+    descarga.execute("https://cdn.akamai.steamstatic.com/steam/apps/813780/capsule_616x353.jpg?t=1699054682");
     }
 
     public void Free(View view) {
