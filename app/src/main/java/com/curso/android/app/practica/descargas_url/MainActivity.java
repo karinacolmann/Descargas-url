@@ -22,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
     descarga.execute("https://cdn.akamai.steamstatic.com/steam/apps/813780/capsule_616x353.jpg?t=1699054682");
     }
 
-    public void Free(View view) {
+
+    //Ignorar este método, era solo de prueba.....
+    /*public void Free(View view) {
         Intent intent1 = new Intent(this, MainActivity2.class);
         startActivity(intent1);
-    }
+    }*/
 
 
 }

@@ -13,6 +13,6 @@ public class MainActivity2 extends AppCompatActivity {
 
     }
 
-
+//esta activity está vacía, solo era de prueba, no hace nada.
 
 }
