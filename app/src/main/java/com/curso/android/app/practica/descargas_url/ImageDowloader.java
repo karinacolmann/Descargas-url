@@ -7,14 +7,20 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 
+import java.net.URL;
+
 public class ImageDowloader extends AsyncTask<String, Integer, Bitmap>{
 
     private Bitmap ImagenDescargada = null;
 
     @Override
     protected Bitmap doInBackground(String... strings) {
-        String URL = strings[0];
-        Log.i("testing", URL);
+        String URL_consulta = strings[0];
+        try{
+            URL consulta = new URL(URL_consulta);
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
         return ImagenDescargada;
     }
 }
